@@ -1,0 +1,23 @@
+module Prime
+{
+	struct Response
+	{
+    	0 optional int status = 0;
+    	1 optional string msg = "";
+	};
+
+	struct PrimeData
+	{
+    	0 optional int x = 0;
+    	1 optional int y = 0;
+    	2 optional int z = 0;
+    	3 optional int sum = 0;
+    	4 optional bool myIsPrime = false;
+
+	};
+
+	interface PrimeResource
+    {
+    	Response isPrime(out PrimeData dataOut);
+    };
+}

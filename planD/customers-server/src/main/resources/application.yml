@@ -1,0 +1,28 @@
+server:
+  #端口号
+  port: 8023
+
+spring:
+  profiles:
+    active: production
+  cache:
+    cache-names: customers
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  datasource:
+#    schema: classpath*:db/hsqldb/schema.sql
+#    data: classpath*:db/hsqldb/data.sql
+    schema: classpath*:db/mysql/schema.sql
+    data: classpath*:db/mysql/data.sql
+    url: jdbc:mysql://172.16.24.195:3306/petclinic?useSSL=false
+    username: root
+    password: justpwd
+    driver-class-name: com.mysql.jdbc.Driver
+    initialization-mode: NEVER
+
+vets:
+  cache:
+    ttl: 10
+    heap-size: 10

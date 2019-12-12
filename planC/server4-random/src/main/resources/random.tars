@@ -1,0 +1,19 @@
+module Random
+{
+	struct Response
+	{
+    	0 optional int status = 0;
+    	1 optional string msg = "";
+	};
+
+	struct RandomData
+	{
+    	0 optional int x = 0;
+    	1 optional int y = 0;
+	};
+
+	interface RandomResource
+    {
+    	Response getRandomData(out RandomData dataOut);
+    };
+}

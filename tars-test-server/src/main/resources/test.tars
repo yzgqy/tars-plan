@@ -1,0 +1,9 @@
+module Test
+{
+	interface Test
+	{
+	    string testString(string msg);
+	    string testB2S(string msg);
+	    string testS2B(string msg);
+	};
+};

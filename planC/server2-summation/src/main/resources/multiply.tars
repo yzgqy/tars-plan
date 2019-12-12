@@ -1,0 +1,20 @@
+module Multiply
+{
+	struct Response
+	{
+    	0 optional int status = 0;
+    	1 optional string msg = "";
+	};
+
+	struct MultiplyData
+	{
+    	0 optional int x = 0;
+    	1 optional int y = 0;
+    	2 optional int z = 0;
+	};
+
+	interface MultiplyResource
+    {
+    	Response doMultiply(out MultiplyData dataOut);
+    };
+}

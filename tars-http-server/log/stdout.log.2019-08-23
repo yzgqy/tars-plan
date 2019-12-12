@@ -1,0 +1,38 @@
+2019-08-23 10:15:29.687	INFO	  .   ____          _            __ _ _
+2019-08-23 10:15:29.688	INFO	 /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2019-08-23 10:15:29.688	INFO	( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2019-08-23 10:15:29.688	INFO	 \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2019-08-23 10:15:29.688	INFO	  '  |____| .__|_| |_|_| |_\__, | / / / /
+2019-08-23 10:15:29.688	INFO	 =========|_|==============|___/=/_/_/_/
+2019-08-23 10:15:29.688	INFO	[32m :: Spring Boot :: [39m      [2m (v2.1.6.RELEASE)[0;39m
+2019-08-23 10:15:29.755	INFO	[2m2019-08-23 10:15:29.753[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36mcn.nju.tarstest.TarsTestApplication     [0;39m [2m:[0;39m Starting TarsTestApplication on yayadeMacBook-Pro.local with PID 16418 (/Users/yaya/Desktop/tars-http-server/target/classes started by yaya in /Users/yaya/Desktop/tars-http-server)
+
+2019-08-23 10:15:29.756	INFO	[2m2019-08-23 10:15:29.756[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36mcn.nju.tarstest.TarsTestApplication     [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+
+2019-08-23 10:15:30.481	INFO	[2m2019-08-23 10:15:30.481[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'com.qq.tars.spring.TarsManageServiceConfiguration' of type [com.qq.tars.spring.TarsManageServiceConfiguration$$EnhancerBySpringCGLIB$$477a6b41] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2019-08-23 10:15:30.492	INFO	[2m2019-08-23 10:15:30.492[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'communicator' of type [com.qq.tars.client.Communicator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2019-08-23 10:15:30.595	INFO	[TARS] http server start at 8080
+2019-08-23 10:15:30.707	INFO	[2m2019-08-23 10:15:30.707[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8040 (http)
+
+2019-08-23 10:15:30.730	INFO	[2m2019-08-23 10:15:30.730[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+
+2019-08-23 10:15:30.730	INFO	[2m2019-08-23 10:15:30.730[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.21]
+
+2019-08-23 10:15:30.818	INFO	[2m2019-08-23 10:15:30.817[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+
+2019-08-23 10:15:30.818	INFO	[2m2019-08-23 10:15:30.818[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.web.context.ContextLoader           [0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1018 ms
+
+2019-08-23 10:15:31.1	INFO	[2m2019-08-23 10:15:31.001[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+
+2019-08-23 10:15:31.138	INFO	[SERVER] server starting at tcp -h 127.0.0.1 -p 18604 -t 3000...
+2019-08-23 10:15:31.163	INFO	[SERVER] server started at tcp -h 127.0.0.1 -p 18604 -t 3000...
+2019-08-23 10:15:31.166	INFO	[SERVER] The application started successfully.
+2019-08-23 10:15:31.167	INFO	MaxConnCount=200000
+2019-08-23 10:15:31.167	INFO	The session manager service started...
+2019-08-23 10:15:31.167	INFO	[SERVER] server is ready...
+2019-08-23 10:15:31.184	INFO	[2m2019-08-23 10:15:31.184[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8040 (http) with context path ''
+
+2019-08-23 10:15:31.187	INFO	[2m2019-08-23 10:15:31.187[0;39m [32m INFO[0;39m [35m16418[0;39m [2m---[0;39m [2m[           main][0;39m [36mcn.nju.tarstest.TarsTestApplication     [0;39m [2m:[0;39m Started TarsTestApplication in 1.837 seconds (JVM running for 2.477)
+

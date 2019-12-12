@@ -1,0 +1,15 @@
+module Summation
+{
+	struct SummationData
+	{
+    	0 optional int x = 0;
+    	1 optional int y = 0;
+    	2 optional int z = 0;
+    	3 optional int sum = 0;
+	};
+
+	interface SummationResource
+    {
+    	Response doSummation(out SummationData dataOut);
+    };
+}

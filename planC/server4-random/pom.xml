@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>planC</artifactId>
+        <groupId>cn.nju</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>server4-random</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- tars -->
+        <dependency>
+            <groupId>com.tencent.tars</groupId>
+            <artifactId>tars-spring-boot-starter</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- 启动类 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>cn.nju.random.RandomApplication</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--<plugin>-->
+                <!--<groupId>com.tencent.tars</groupId>-->
+                <!--<artifactId>tars-maven-plugin</artifactId>-->
+                <!--<version>1.6.1</version>-->
+                <!--<configuration>-->
+                    <!--<tars2JavaConfig>-->
+                        <!--&lt;!&ndash; tars文件位置 &ndash;&gt;-->
+                        <!--<tarsFiles>-->
+                            <!--<tarsFile>${basedir}/src/main/resources/random.tars</tarsFile>-->
+                        <!--</tarsFiles>-->
+                        <!--&lt;!&ndash; 源文件编码 &ndash;&gt;-->
+                        <!--<tarsFileCharset>UTF-8</tarsFileCharset>-->
+                        <!--&lt;!&ndash; 生成服务端代码 &ndash;&gt;-->
+                        <!--<servant>true</servant>-->
+                        <!--&lt;!&ndash; 生成源代码编码 &ndash;&gt;-->
+                        <!--<charset>UTF-8</charset>-->
+                        <!--&lt;!&ndash; 生成的源代码目录 &ndash;&gt;-->
+                        <!--<srcPath>${basedir}/src/main/java</srcPath>-->
+                        <!--&lt;!&ndash; 生成源代码包前缀 &ndash;&gt;-->
+                        <!--<packagePrefixName>cn.nju.random.tars.</packagePrefixName>-->
+                    <!--</tars2JavaConfig>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+
+            <plugin>
+                <groupId>com.tencent.tars</groupId>
+                <artifactId>tars-maven-plugin</artifactId>
+                <version>1.6.1</version>
+                <configuration>
+                    <tars2JavaConfig>
+                        <!-- tars文件位置 -->
+                        <tarsFiles>
+                            <tarsFile>${basedir}/src/main/resources/random.tars</tarsFile>
+                        </tarsFiles>
+                        <!-- 源文件编码 -->
+                        <tarsFileCharset>UTF-8</tarsFileCharset>
+                        <!-- 生成服务端代码 -->
+                        <servant>false</servant>
+                        <!-- 生成源代码编码 -->
+                        <charset>UTF-8</charset>
+                        <!-- 生成的源代码目录 -->
+                        <srcPath>${basedir}/src/main/java</srcPath>
+                        <!-- 生成源代码包前缀 -->
+                        <packagePrefixName>cn.nju.random.test.tars.</packagePrefixName>
+                    </tars2JavaConfig>
+                </configuration>
+            </plugin>
+        </plugins>
+
+
+    </build>
+
+
+</project>
